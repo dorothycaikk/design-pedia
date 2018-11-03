@@ -1,0 +1,182 @@
+/*
+Full CSS Reset
+
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Font declaration
+  ========================================
+*/
+
+@font-face {
+    font-family: flama-light;
+    src: url(../fonts/flama-light-regular.otf);
+}
+
+
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.bgc {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #03c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+.title {
+    position: relative;
+    font: 1.8em flama-light;
+    letter-spacing: 0.05em;
+    color: #fff;
+    height: 100vh;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.n-shuffle {
+    position: relative;
+    font: 1.8em flama-light;
+    letter-spacing: 0.05em;
+    color: #fff;
+    width: 20em;
+    height: 100vh;
+    height: 1.5em;
+    border: 2px solid #fff;
+    margin: auto;
+    padding: 0 0.2em 0 0.2em;
+    
+
+
+}
+
+
+
+
+
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
+
+@media all and (max-width: 980px) {  
+    .r-tc1 {
+        visibility: hidden;
+    }
+    
+    .r-cb-code {
+        font-size: 30em;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .r-tc1,
+    .r-tc2 {
+        visibility: hidden;
+    }
+    
+    .r-cb-code {
+        font-size: 15em;
+    }
+    
+    .end-mark {
+        visibility: visible;
+    }
+}
+
+@media all and (max-height: 300px) {
+    .end-mark {
+        visibility: hidden;
+    }
+}
+
