@@ -107,7 +107,7 @@ table {
     border-left: 1.3em solid #fff;
     border-top: 0.8em solid transparent;
     border-bottom: 0.8em solid transparent;
-    display: inline-block;
+
     float: right;
     margin-top: 5px;
     margin-right: 5px;
@@ -144,7 +144,8 @@ table {
     margin: auto;
     padding: 0.4em 0.3em;
     border: 2px solid #fff;
-    width: 40.5em;  
+    width: 40.5em;
+    margin-bottom: 4em;
 }
 
 .typewrite {
@@ -153,7 +154,6 @@ table {
     letter-spacing: 0.05em;
     color: #fff;
     width: auto;
-    display: inline-block;
 }
 
 
@@ -187,6 +187,7 @@ table {
         padding: 0.4em 0.3em;
         border: 2px solid #fff;
         width: auto;
+        margin-bottom: 4em;
     }
 
     .typewrite {
