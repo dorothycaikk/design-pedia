@@ -87,7 +87,6 @@ table {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #03c;
     background: -webkit-radial-gradient(#06b, #03c);
     background:      -o-radial-gradient(#06b, #03c);
     background:    -moz-radial-gradient(#06b, #03c);
@@ -155,6 +154,85 @@ table {
     color: #fff;
     width: auto;
 }
+
+
+
+/*
+  ========================================
+  Directory
+  ========================================
+*/
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 70px;
+}
+
+.paper {
+    border-bottom: 70px solid #fff;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+    border-top: 15px solid transparent;
+	height: 0;
+	width: 400px;
+    transform: -webkit-rotate(-5deg); /* Safari and Chrome */
+    transform:     -ms-rotate(-5deg); /* IE 9 */
+    transform:         rotate(-5deg);
+    
+}
+/* Safari and Chrome */
+  cursor:pointer;
+     p {
+      position:absolute;
+      top:10px;
+      z-index:10;
+      transform: rotate(5deg);
+      -ms-transform: rotate(5deg); /* IE 9 */
+      -webkit-transform: rotate(5deg); /* Safari and Chrome */
+      font-family:arial, san-serif;
+      font-weight:bold;
+      font-size:30px;
+      color:#fff;
+      left:30%;
+  }
+  &:hover {
+    border-bottom: 100px solid darken(tomato,6%);
+    &:after {
+      	border-bottom: 100px solid darken(tomato,6%);
+    }
+      
+  }
+}
+
+.paper:after {
+  content: "";
+	border-bottom: 100px solid tomato;
+	border-left: 30px solid transparent;
+	border-right:42px solid transparent;
+  border-top:20px solid transparent;
+	height: 0;
+	width: 198px;
+  display: block;
+  left:0;
+  margin-left:-25px;
+  margin-top:-8px;
+  transform: rotate(5deg);
+  -ms-transform: rotate(5deg); /* IE 9 */
+  -webkit-transform: rotate(5deg); /* Safari and Chrome */
+
+}
+	
+
+
+.paper1 {
+    font: 1.8em flama-light;
+    letter-spacing: 0.05em;
+    color: #03c;
+    
+}
+
+
 
 
 
