@@ -80,6 +80,10 @@ table {
     src: url(../fonts/flama-book-regular.otf);
 }
 
+@font-face {
+    font-family: flama-bold;
+    src: url(../fonts/flama-bold.otf);
+}
 
 /*
   ========================================
@@ -155,7 +159,11 @@ table {
     color: #03c;
 }
 
-
+.salary {
+    font: 1em flama-bold;
+    letter-spacing: 0.05em;
+    color: #03c;
+}
 
 /*
   ========================================
@@ -184,8 +192,9 @@ table {
 
 .return {
     position: absolute;
-    width: 80px;
-    height: 30px;
+    padding: 3px 8px;
+    width: 100px;
+    height: 40px;
     background-color: #fff;
     font: 1em flama-book;
     letter-spacing: 0.05em;
@@ -404,12 +413,12 @@ table {
 }
 
 .container-data {
-    display:                 flex;
-    display:                 -webkit-flex; /* Safari 8 */
-            flex-wrap:               wrap;
-    -webkit-flex-wrap:       wrap;         /* Safari 8 */
-            justify-content:         center;
-    -webkit-justify-content: center;       /* Safari 8 */
+    -webkit-display: flex; /* Safari 8 */
+            display: flex;
+    -webkit-flex-wrap: wrap; /* Safari 8 */
+            flex-wrap: wrap;
+    -webkit-justify-content: center; /* Safari 8 */
+            justify-content: center;
 }
 
 .column {
@@ -458,6 +467,21 @@ h2 {
 
 #text-3 {
     height: 320px;
+}
+
+.pledge-btn {
+    width: 230px;
+    height: 50px;
+    background-color: #03c;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font: 1.2em flama-book;
+    color: #fff;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
 }
 
 /*
