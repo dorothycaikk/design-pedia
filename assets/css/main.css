@@ -85,6 +85,11 @@ table {
     src: url(../fonts/flama-bold.otf);
 }
 
+@font-face {
+    font-family: daniel-black;
+    src: url(../fonts/danielbk.ttf);
+}
+
 /*
   ========================================
   General
@@ -164,6 +169,8 @@ table {
     letter-spacing: 0.05em;
     color: #03c;
 }
+
+
 
 /*
   ========================================
@@ -482,6 +489,82 @@ h2 {
     cursor: pointer;
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
+    -webkit-background: radial-gradient(#06b, #03c);
+       -moz-background: radial-gradient(#06b, #03c);
+         -o-background: radial-gradient(#06b, #03c);
+            background: radial-gradient(#06b, #03c);
+}
+
+/*
+  ========================================
+  Pledge
+  ========================================
+*/
+
+.container-pledge {
+    padding: 0 150px;
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pledge {
+    position: relative;
+    padding: 0 0 20px 0;
+    font: 1.8em flama-light;
+    letter-spacing: 0.05em;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+#p-first-line {
+    margin-bottom: 30px;
+}
+
+.p-field {
+    padding: 5px 10px;
+    background-color: #fff;
+    font: 1em flama-book;
+    letter-spacing: 0.05em;
+    color: #03c;
+}
+
+
+#sign-box {
+    margin:  30px auto;
+    width: 350px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: transparent;
+    font: 1.8em flama-book;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+
+.p-sign-padding {
+    margin-bottom: 20px;
+}
+
+/*
+  ========================================
+  Pledge Signed
+  ========================================
+*/
+
+#signature {
+    margin:  30px auto;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    font: 1.8em daniel-black;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-decoration: underline;
 }
 
 /*
@@ -490,7 +573,24 @@ h2 {
   ========================================
 */
 
-@media all and (max-width: 980px) {  
+@media all and (max-width: 980px) {
+    .container-pledge {
+        padding: 0 50px;
+        width: 100vw;
+        height: 100vh;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .pledge {
+        position: relative;
+        padding: 0 0 20px 0;
+        font: 1.8em flama-light;
+        letter-spacing: 0.05em;
+        color: #fff;
+        line-height: 1.5em;
+    }
     
 }
 
@@ -523,6 +623,25 @@ h2 {
         width: auto;
     }
 
+    .container-pledge {
+        padding: 0 20px;
+        width: 100vw;
+        height: 100vh;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .pledge {
+        position: relative;
+        padding: 0 0 20px 0;
+        font: 1.8em flama-light;
+        letter-spacing: 0.05em;
+        color: #fff;
+        line-height: 1.5em;
+    }
+    
+    
 }
 
 @media all and (max-height: 400px) {
