@@ -567,6 +567,12 @@ h2 {
     text-decoration: underline;
 }
 
+#note {
+    font: 0.8em flama-light;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
 /*
   ========================================
   Media Queries
